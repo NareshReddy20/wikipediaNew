@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="wiki-search-header text-center">
+            <img class="wiki-logo" src="https://nkb-backend-otg-media-static.s3.ap-south-1.amazonaws.com/ccbp-dynamic-webapps/wiki-logo-img.png" alt="Wikipedia Logo" />
+            <br />
+            <input placeholder="Type a keyword and press Enter to search" type="search" class="search-input w-100" id="searchInput" aria-label="Search Wikipedia" />
+        </div>
+        <div class="d-none" id="spinner">
+            <div class="d-flex flex-row justify-content-center">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+    </div>
+    <script src="wiki.js"></script>
+</body>
+</html>
